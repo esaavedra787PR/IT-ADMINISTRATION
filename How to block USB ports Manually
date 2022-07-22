@@ -1,1 +1,10 @@
+(To make this you have to be administrator.)
+Start
+Run
+regedit
+Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\USBSTOR
+start
+Answer(in the value type 4)
+enter.
+
 
