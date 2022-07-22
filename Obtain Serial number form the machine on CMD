@@ -1,0 +1,1 @@
+CMD command: WMIC BIOS get serialnumber 
