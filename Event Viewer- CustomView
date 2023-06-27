@@ -1,0 +1,17 @@
+Filtering Users
+Remember:
+4624 Successfull Login
+4634 Successfull Logoff
+
+
+<QueryList>
+  <Query Id="0" Path="Security">
+    <Select Path="Security">
+      *[System[(EventID=4624 or EventID=4634)]]
+      and
+      *[EventData[Data[@Name='TargetUserName'] and (Data='jpavo')]]
+      and
+      *[EventData[Data[@Name='TargetDomainName'] and (Data='Domain.local')]]
+    </Select>
+  </Query>
+</QueryList>
