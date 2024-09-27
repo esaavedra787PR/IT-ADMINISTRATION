@@ -1,0 +1,15 @@
+Bypass windows 11 support error
+
+shift + F10
+
+regedit
+
+HKEY_LOCAL_MACHINE - SYSTEM - Setup
+
+Right click on Setup and then click on New and then Key. Name the new key, LabConfig.
+
+Double click on LabConfig, and then right click in an empty space, New and then DWORD (32-bit) Value.
+
+Create 2 new values, named BypassTPMCheck and the other one BypassSecureBootCheck.
+
+Double click on each value, and then change their value data to 1.
